@@ -188,12 +188,12 @@
 
 
 <div class="viewcode-block" id="Svm41CmdFirmwareUpdateBase"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdFirmwareUpdateBase">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdFirmwareUpdateBase</span><span class="p">(</span><span class="n">ShdlcCommand</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    SHDLC command 0xF3: &quot;Firmware Update&quot;.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdFirmwareUpdateBase.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdFirmwareUpdateBase.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdFirmwareUpdateBase</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -201,7 +201,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdEnterBootloader"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdEnterBootloader">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdEnterBootloader</span><span class="p">(</span><span class="n">Svm41CmdFirmwareUpdateBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Enter Bootloader Command</span>
 
 <span class="sd">    Command to enter into the bootloader mode. The device will reboot into</span>
@@ -214,7 +214,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdEnterBootloader.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdEnterBootloader.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdEnterBootloader</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -227,7 +227,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdStartUpdate"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdStartUpdate">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdStartUpdate</span><span class="p">(</span><span class="n">Svm41CmdFirmwareUpdateBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Start Update Command</span>
 
 <span class="sd">    Command to start the firmware update. The devices flash will be erased</span>
@@ -238,7 +238,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdStartUpdate.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdStartUpdate.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdStartUpdate</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -251,7 +251,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdUpdateData"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdUpdateData">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdUpdateData</span><span class="p">(</span><span class="n">Svm41CmdFirmwareUpdateBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Update Data Command</span>
 
 <span class="sd">    Command to send the new firmware data as hex code in binary format.</span>
@@ -262,7 +262,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdUpdateData.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdUpdateData.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 
 <span class="sd">        :param bytes data:</span>
@@ -279,7 +279,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdStopUpdate"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdStopUpdate">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdStopUpdate</span><span class="p">(</span><span class="n">Svm41CmdFirmwareUpdateBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Stop Update Command</span>
 
 <span class="sd">    After all update data frames are sent, the stop update marks the end of the</span>
@@ -294,7 +294,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdStopUpdate.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.firmware_update.Svm41CmdStopUpdate.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">checksum</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 
 <span class="sd">        :param int checksum:</span>
@@ -320,7 +320,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021 Sensirion AG, Switzerland
+        &copy; Copyright 2023 Sensirion AG, Switzerland
 
     </p>
   </div>

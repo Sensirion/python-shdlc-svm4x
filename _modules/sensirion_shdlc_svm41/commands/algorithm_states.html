@@ -188,12 +188,12 @@
 
 
 <div class="viewcode-block" id="Svm41CmdAlgorithmStatesBase"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_states.Svm41CmdAlgorithmStatesBase">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdAlgorithmStatesBase</span><span class="p">(</span><span class="n">ShdlcCommand</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    SHDLC command 0x61: &quot;Algorithm States&quot;.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdAlgorithmStatesBase.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_states.Svm41CmdAlgorithmStatesBase.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmStatesBase</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -201,7 +201,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdGetVocState"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_states.Svm41CmdGetVocState">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdGetVocState</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmStatesBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get Voc State Command</span>
 
 <span class="sd">    Gets the current VOC algorithm state. Retrieved values can be used to set</span>
@@ -214,7 +214,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdGetVocState.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_states.Svm41CmdGetVocState.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdGetVocState</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -227,7 +227,7 @@
 
 <div class="viewcode-block" id="Svm41CmdGetVocState.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_states.Svm41CmdGetVocState.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return: Current VOC algorithm state.</span>
 <span class="sd">        :rtype: bytes</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -236,7 +236,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdSetVocState"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_states.Svm41CmdSetVocState">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdSetVocState</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmStatesBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Set Voc State Command</span>
 
 <span class="sd">    Set previously retrieved VOC algorithm state to resume operation after a</span>
@@ -248,7 +248,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdSetVocState.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_states.Svm41CmdSetVocState.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 
 <span class="sd">        :param bytes state:</span>
@@ -274,7 +274,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021 Sensirion AG, Switzerland
+        &copy; Copyright 2023 Sensirion AG, Switzerland
 
     </p>
   </div>

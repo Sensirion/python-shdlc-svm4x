@@ -188,12 +188,12 @@
 
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredValuesBase"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredValuesBase">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdReadMeasuredValuesBase</span><span class="p">(</span><span class="n">ShdlcCommand</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    SHDLC command 0x03: &quot;Read Measured Values&quot;.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredValuesBase.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredValuesBase.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdReadMeasuredValuesBase</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -201,7 +201,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredValuesAsIntegers"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredValuesAsIntegers">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdReadMeasuredValuesAsIntegers</span><span class="p">(</span><span class="n">Svm41CmdReadMeasuredValuesBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Read Measured Values As Integers Command</span>
 
 <span class="sd">    Returns the new measurement results as integers.</span>
@@ -215,7 +215,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredValuesAsIntegers.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredValuesAsIntegers.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdReadMeasuredValuesAsIntegers</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -228,7 +228,7 @@
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredValuesAsIntegers.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredValuesAsIntegers.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return:</span>
 <span class="sd">            - humidity (int) -</span>
 <span class="sd">              Compensated ambient humidity in % RH with a scaling factor of</span>
@@ -253,7 +253,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredRawValues"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredRawValues">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdReadMeasuredRawValues</span><span class="p">(</span><span class="n">Svm41CmdReadMeasuredValuesBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Read Measured Raw Values Command</span>
 
 <span class="sd">    Returns the measured raw values.</span>
@@ -267,7 +267,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredRawValues.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredRawValues.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdReadMeasuredRawValues</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -280,7 +280,7 @@
 
 <div class="viewcode-block" id="Svm41CmdReadMeasuredRawValues.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.read_measured_values.Svm41CmdReadMeasuredRawValues.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return:</span>
 <span class="sd">            - raw_humidity (int) -</span>
 <span class="sd">              Uncompensated raw humidity in % RH as read from the SHT40 with a</span>
@@ -314,7 +314,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021 Sensirion AG, Switzerland
+        &copy; Copyright 2023 Sensirion AG, Switzerland
 
     </p>
   </div>

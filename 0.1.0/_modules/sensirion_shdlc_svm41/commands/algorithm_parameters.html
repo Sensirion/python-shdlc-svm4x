@@ -188,12 +188,12 @@
 
 
 <div class="viewcode-block" id="Svm41CmdAlgorithmParametersBase"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdAlgorithmParametersBase">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdAlgorithmParametersBase</span><span class="p">(</span><span class="n">ShdlcCommand</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    SHDLC command 0x60: &quot;Algorithm Parameters&quot;.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdAlgorithmParametersBase.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdAlgorithmParametersBase.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -201,14 +201,14 @@
 
 
 <div class="viewcode-block" id="Svm41CmdGetTemperatureOffsetForRhtMeasurements"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetTemperatureOffsetForRhtMeasurements">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdGetTemperatureOffsetForRhtMeasurements</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get Temperature Offset For Rht Measurements Command</span>
 
 <span class="sd">    Gets the T-Offset for the temperature compensation of the RHT algorithm.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdGetTemperatureOffsetForRhtMeasurements.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetTemperatureOffsetForRhtMeasurements.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdGetTemperatureOffsetForRhtMeasurements</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -221,7 +221,7 @@
 
 <div class="viewcode-block" id="Svm41CmdGetTemperatureOffsetForRhtMeasurements.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetTemperatureOffsetForRhtMeasurements.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return: Temperature offset which is used for the RHT measurements.</span>
 <span class="sd">                 Values are in degrees celsius with a scaling of 200. Thus the</span>
 <span class="sd">                 received value must be divided by 200.</span>
@@ -232,14 +232,14 @@
 
 
 <div class="viewcode-block" id="Svm41CmdGetVocTuningParameters"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetVocTuningParameters">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdGetVocTuningParameters</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get Voc Tuning Parameters Command</span>
 
 <span class="sd">    Gets the currently set parameters for customizing the VOC algorithm.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdGetVocTuningParameters.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetVocTuningParameters.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdGetVocTuningParameters</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -252,7 +252,7 @@
 
 <div class="viewcode-block" id="Svm41CmdGetVocTuningParameters.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetVocTuningParameters.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return:</span>
 <span class="sd">            - voc_index_offset (int) -</span>
 <span class="sd">              VOC index representing typical (average) conditions.</span>
@@ -290,14 +290,14 @@
 
 
 <div class="viewcode-block" id="Svm41CmdGetNoxTuningParameters"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetNoxTuningParameters">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdGetNoxTuningParameters</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get Nox Tuning Parameters Command</span>
 
 <span class="sd">    Gets the currently set parameters for customizing the NOx algorithm.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdGetNoxTuningParameters.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetNoxTuningParameters.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdGetNoxTuningParameters</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -310,7 +310,7 @@
 
 <div class="viewcode-block" id="Svm41CmdGetNoxTuningParameters.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdGetNoxTuningParameters.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return:</span>
 <span class="sd">            - nox_index_offset (int) -</span>
 <span class="sd">              NOx index representing typical (average) conditions.</span>
@@ -350,14 +350,14 @@
 
 
 <div class="viewcode-block" id="Svm41CmdStoreNvData"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdStoreNvData">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdStoreNvData</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Store Nv Data Command</span>
 
 <span class="sd">    Stores all algorithm parameters to the non-volatile memory.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdStoreNvData.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdStoreNvData.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdStoreNvData</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -370,7 +370,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdSetTemperatureOffsetForRhtMeasurements"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdSetTemperatureOffsetForRhtMeasurements">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdSetTemperatureOffsetForRhtMeasurements</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Set Temperature Offset For Rht Measurements Command</span>
 
 <span class="sd">    Sets the T-Offset for the temperature compensation of the RHT algorithm.</span>
@@ -381,7 +381,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdSetTemperatureOffsetForRhtMeasurements.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdSetTemperatureOffsetForRhtMeasurements.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t_offset</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 
 <span class="sd">        :param int t_offset:</span>
@@ -400,7 +400,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdSetVocTuningParameters"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdSetVocTuningParameters">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdSetVocTuningParameters</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Set Voc Tuning Parameters Command</span>
 
 <span class="sd">    Sets parameters to customize the VOC algorithm. This command is only</span>
@@ -412,7 +412,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdSetVocTuningParameters.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdSetVocTuningParameters.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">voc_index_offset</span><span class="p">,</span> <span class="n">learning_time_offset_hours</span><span class="p">,</span> <span class="n">learning_time_gain_hours</span><span class="p">,</span> <span class="n">gating_max_duration_minutes</span><span class="p">,</span> <span class="n">std_initial</span><span class="p">,</span> <span class="n">gain_factor</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 
 <span class="sd">        :param int voc_index_offset:</span>
@@ -457,7 +457,7 @@
 
 
 <div class="viewcode-block" id="Svm41CmdSetNoxTuningParameters"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdSetNoxTuningParameters">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdSetNoxTuningParameters</span><span class="p">(</span><span class="n">Svm41CmdAlgorithmParametersBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Set Nox Tuning Parameters Command</span>
 
 <span class="sd">    Sets parameters to customize the NOx algorithm. This command is only</span>
@@ -469,7 +469,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdSetNoxTuningParameters.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.algorithm_parameters.Svm41CmdSetNoxTuningParameters.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nox_index_offset</span><span class="p">,</span> <span class="n">learning_time_offset_hours</span><span class="p">,</span> <span class="n">learning_time_gain_hours</span><span class="p">,</span> <span class="n">gating_max_duration_minutes</span><span class="p">,</span> <span class="n">std_initial</span><span class="p">,</span> <span class="n">gain_factor</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 
 <span class="sd">        :param int nox_index_offset:</span>
@@ -523,7 +523,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021 Sensirion AG, Switzerland
+        &copy; Copyright 2023 Sensirion AG, Switzerland
 
     </p>
   </div>

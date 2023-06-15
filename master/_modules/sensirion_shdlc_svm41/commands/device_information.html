@@ -188,12 +188,12 @@
 
 
 <div class="viewcode-block" id="Svm41CmdDeviceInformationBase"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdDeviceInformationBase">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdDeviceInformationBase</span><span class="p">(</span><span class="n">ShdlcCommand</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    SHDLC command 0xD0: &quot;Device Information&quot;.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdDeviceInformationBase.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdDeviceInformationBase.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdDeviceInformationBase</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -201,14 +201,14 @@
 
 
 <div class="viewcode-block" id="Svm41CmdGetProductType"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetProductType">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdGetProductType</span><span class="p">(</span><span class="n">Svm41CmdDeviceInformationBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get Product Type Command</span>
 
 <span class="sd">    Gets the product type from the device.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdGetProductType.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetProductType.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdGetProductType</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -221,7 +221,7 @@
 
 <div class="viewcode-block" id="Svm41CmdGetProductType.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetProductType.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return: String containing the product type.</span>
 <span class="sd">        :rtype: str</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -230,14 +230,14 @@
 
 
 <div class="viewcode-block" id="Svm41CmdGetProductName"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetProductName">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdGetProductName</span><span class="p">(</span><span class="n">Svm41CmdDeviceInformationBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get Product Name Command</span>
 
 <span class="sd">    Gets the product name from the device.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdGetProductName.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetProductName.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdGetProductName</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -250,7 +250,7 @@
 
 <div class="viewcode-block" id="Svm41CmdGetProductName.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetProductName.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return: String containing the product name.</span>
 <span class="sd">        :rtype: str</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -259,14 +259,14 @@
 
 
 <div class="viewcode-block" id="Svm41CmdGetSerialNumber"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetSerialNumber">[docs]</a><span class="k">class</span> <span class="nc">Svm41CmdGetSerialNumber</span><span class="p">(</span><span class="n">Svm41CmdDeviceInformationBase</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get Serial Number Command</span>
 
 <span class="sd">    Gets the serial number from the device.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Svm41CmdGetSerialNumber.__init__"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetSerialNumber.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Constructor.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Svm41CmdGetSerialNumber</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -279,7 +279,7 @@
 
 <div class="viewcode-block" id="Svm41CmdGetSerialNumber.interpret_response"><a class="viewcode-back" href="../../../api.html#sensirion_shdlc_svm41.commands.device_information.Svm41CmdGetSerialNumber.interpret_response">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">interpret_response</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        :return: String containing the serial number.</span>
 <span class="sd">        :rtype: str</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -297,7 +297,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021 Sensirion AG, Switzerland
+        &copy; Copyright 2023 Sensirion AG, Switzerland
 
     </p>
   </div>
