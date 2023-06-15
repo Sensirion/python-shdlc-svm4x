@@ -1,7 +1,7 @@
-sensirion-shdlc-svm41
+sensirion-shdlc-svm4x
 =====================
 
-This package contains the SHDLC driver for the SVM41 Evaluation Kit which
+This package contains the SHDLC driver for the SVM4x Evaluation Kit which
 has a UART interface using the SHDLC protocol.
 
 The driver provides all SHDLC commands as Python methods and handles all the
@@ -12,4 +12,4 @@ etc.
 Installation and Usage
 ----------------------
 
-The user manual is available at https://sensirion.github.io/python-shdlc-svm41/.
+The user manual is available at https://sensirion.github.io/python-shdlc-svm4x/.
