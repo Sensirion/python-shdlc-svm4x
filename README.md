@@ -1,13 +1,15 @@
-# Python Driver for Sensirion SVM41 Evaluation Kit
+# Python Driver for Sensirion SVM4x Evaluation Kit
 
-This package contains the SHDLC driver for the SVM41 Evaluation Kit as a Python
+This package contains the SHDLC driver for the SVM4x Evaluation Kit as a Python
 package. For details, please read the package description in
 [README.rst](README.rst).
+
+The SVM4x evaluation kit covers evaluation of the SGP40 and SGP41 sensors.
 
 ## Usage
 
 See package description in [README.rst](README.rst) and user manual at
-https://sensirion.github.io/python-shdlc-svm41/.
+https://sensirion.github.io/python-shdlc-svm4x/.
 
 ## Development
 
@@ -38,12 +40,12 @@ pytest                          # Run all tests
 
 The tests with the marker `needs_device` have following requirements:
 
-- An SVM41 device must be connected to the computer.
+- An SVM4x device must be connected to the computer.
   - **WARNING: Some tests modify non-volatile configurations of the device,
     restore factory defaults etc.! Do not run the tests on a device which you
     don't want to get modified!**
 - You have to specify the serial port (and optionally other connection
-  parameters) used to connect to the SVM41 device:
+  parameters) used to connect to the SVM4x device:
   - `--serial-port`: The serial port where the device is connected
     (e.g. `COM7`).
 
