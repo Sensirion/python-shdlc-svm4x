@@ -1,5 +1,7 @@
 # Python Driver for Sensirion SVM4x Evaluation Kit
 
+THIS DRIVER IS DEPRECATED. PLEASE USE https://github.com/Sensirion/python-uart-svm4x.
+
 This package contains the SHDLC driver for the SVM4x Evaluation Kit as a Python
 package. For details, please read the package description in
 [README.rst](README.rst).
